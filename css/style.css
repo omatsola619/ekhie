@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Corinthia:wght@700&family=PT+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: #283350;
+  font-family: 'PT Sans', sans-serif;
+  overflow-x: hidden;
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  flex-wrap: wrap;
+  background: #283350;
+}
+.theNav {
+  margin-top: 10px;
+}
+.theNav > ul {
+  margin: auto 0;
+}
+.theNav > ul > li {
+  display: inline;
+}
+.theNav > ul > li > a {
+  text-decoration: none;
+  margin: 2px 20px;
+  color: white;
+}
+.menu-icon {
+  display: none !important;
+}
+.theNav > ul > .create-event {
+  background: #f58735;
+  color: white;
+}
+.theNav ul .create-event:hover{
+  background: transparent;
+  border: 1px solid #f58735;
+  transition: 0.7s;
+}
+.create-event2 {
+  color: white;
+  background: #f58735;
+}
+.title > img {
+  width: 130px;
+}
+@media screen and (max-width: 653px) {
+  .theNav {
+    display: none !important;
+  }
+  .menu-icon {
+    display: initial !important;
+    font-size: 20px;
+    color: white;
+  }
+}
+
+/* THE MOBILE NAVBAR SETTING */
+
+.nav-menu {
+  width: 250px;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: -100%;
+  transition: 550ms;
+  background-color: white;
+  z-index: 2;
+}
+
+.nav-menu.active {
+  left: 0;
+  transition: 350ms;
+}
+.closeIcon {
+  color: #283350;
+  float: right;
+  font-size: 20px;
+  margin-right: 10px;
+  margin-top: 10px;
+}
+.sidenav {
+  margin-top: 100px;
+}
+.sidenav ul li {
+  list-style: none;
+  margin-bottom: 20px;
+}
+.sidenav ul li a {
+  color: #283350;
+  text-decoration: none;
+}
+.slider {
+  z-index: 10000;
+}
+
+/*styling the slider*/
+/*responsiveness for slider images*/
+@media screen and (min-width: 700px) {
+  .carousel .carousel-item {
+    max-height: 450px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .carousel .carousel-item {
+    max-height: 250px;
+  }
+}
+/*search section styling*/
+.search-box {
+  margin-top: 20px;
+}
+.search {
+  position: relative;
+  box-shadow: 0 0 40px rgba(51, 51, 51, 0.1);
+}
+.search input {
+  height: 60px;
+  text-indent: 25px;
+  border: 2px solid #d6d4d4;
+}
+.search input:focus {
+  box-shadow: none;
+  border: 2px solid #f58735;
+}
+.search .fa-search {
+  position: absolute;
+  top: 20px;
+  left: 16px;
+}
+.search button {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  height: 50px;
+  width: 110px;
+  background: #f58735;
+  color: white;
+}
+/*featured events styling starts here*/
+
+.featured-events .event-title h3 {
+  font-size: 20px;
+  color: white;
+}
+/*styling all cards*/
+.featured-list {
+  display: flex;
+  align-items: flex-start;
+  overflow-x: scroll;
+  cursor: -webkit-grab;
+  cursor: grab;
+}
+.featured-list .card {
+  min-width: 18rem;
+  margin: 0 10px;
+  border: none;
+  border-radius: none;
+  position: relative;
+  height: 370px;
+}
+.tags{
+  position: absolute;
+  top: 155px;
+  left: 220px;
+  background: url('../images/ticket.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.tags p{
+  font-size: 15px;
+  padding: 10px;
+  color: white;
+  font-family: 'Patrick Hand', cursive;
+  margin-top: 10px;
+}
+.featured-list .card img {
+  height: 200px;
+}
+.featured-list::-webkit-scrollbar {
+  width: 0;
+}
+.featured-list .card .card-body{
+ background: #0f1933; 
+}
+.title-parent{
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.title-child{
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: #f58735;
+}
+.location{
+  color: white;
+}
+.price{
+  color: white;
+}
+.location i, .price i{
+  margin-right: 10px;
+  color: white;
+}
+.buy-button{
+  background: transparent;
+  border: 1px solid #f58735;
+  color: white;
+}
+.buy-button:hover{
+  background-color: #f58735;
+  transition: 0.7s;
+  color: white;
+}
+/*styling owl carousel cards*/
+.all-events{
+  margin: 0 10px;
+}
+.all-events > div > .item{
+  max-width: 200px;
+}
+.owl .item .card{
+  border: none;
+  height: 370px;
+}
+.owl .item .card img{
+  height: 200px;
+}
+.card-body{
+  background: #0f1933;
+}
+.all-events .event-title {
+  margin-top: 20px;
+  margin-left: 10px;
+  margin-bottom: 20px;
+}
+.all-events .event-title h3 {
+  font-size: 20px;
+  color: white;
+}
