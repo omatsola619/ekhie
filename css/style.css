@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Corinthia:wght@700&family=PT+Sans&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');* {
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -38,7 +39,7 @@ nav {
   background: #f58735;
   color: white;
 }
-.theNav ul .create-event:hover{
+.theNav ul .create-event:hover {
   background: transparent;
   border: 1px solid #f58735;
   transition: 0.7s;
@@ -58,6 +59,9 @@ nav {
     display: initial !important;
     font-size: 20px;
     color: white;
+  }
+  .title > img {
+    width: 90px;
   }
 }
 
@@ -145,10 +149,10 @@ nav {
 }
 /*featured events styling starts here*/
 
-.featured-events .event-title h3 {
+/* .featured-events .event-title h3 {
   font-size: 20px;
   color: white;
-}
+} */
 /*styling all cards*/
 .featured-list {
   display: flex;
@@ -165,77 +169,62 @@ nav {
   position: relative;
   height: 370px;
 }
-.tags{
-  position: absolute;
-  top: 155px;
-  left: 220px;
-  background: url('../images/ticket.png');
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-.tags p{
-  font-size: 15px;
-  padding: 10px;
-  color: white;
-  font-family: 'Patrick Hand', cursive;
-  margin-top: 10px;
-}
 .featured-list .card img {
   height: 200px;
 }
 .featured-list::-webkit-scrollbar {
   width: 0;
 }
-.featured-list .card .card-body{
- background: #0f1933; 
+.featured-list .card .card-body {
+  background: #0f1933;
 }
-.title-parent{
+.title-parent {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
-.title-child{
+.title-child {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
   color: #f58735;
 }
-.location{
+.location {
   color: white;
 }
-.price{
+.price {
   color: white;
 }
-.location i, .price i{
+.location i,
+.price i {
   margin-right: 10px;
   color: white;
 }
-.buy-button{
+.buy-button {
   background: transparent;
   border: 1px solid #f58735;
   color: white;
 }
-.buy-button:hover{
+.buy-button:hover {
   background-color: #f58735;
   transition: 0.7s;
   color: white;
 }
 /*styling owl carousel cards*/
-.all-events{
+.all-events {
   margin: 0 10px;
 }
-.all-events > div > .item{
+.all-events > div > .item {
   max-width: 200px;
 }
-.owl .item .card{
+.owl .item .card {
   border: none;
   height: 370px;
 }
-.owl .item .card img{
+.owl .item .card img {
   height: 200px;
 }
-.card-body{
+.card-body {
   background: #0f1933;
 }
 .all-events .event-title {
@@ -244,6 +233,36 @@ nav {
   margin-bottom: 20px;
 }
 .all-events .event-title h3 {
-  font-size: 20px;
+  font-size: 23px;
   color: white;
 }
+.location {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.location .date {
+  background: #d4742a;
+  padding: 5px;
+}
+/*styling trending events card*/
+
+.trending-events .row .col-sm-6 .card {
+  margin-bottom: 20px;
+  border: none;
+}
+.trending-events .event-title {
+  margin-top: 20px;
+  margin-left: 10px;
+  margin-bottom: 20px;
+}
+.trending-events .event-title h3 {
+  font-size: 23px;
+  color: white;
+}
+/*styling the footer*/
+footer{
+  background: #0b1327;
+}
+
+/*----------HOMEPAGE STYLING ENDS HERE----------*/
