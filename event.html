@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ekhie-login</title>
+    <title>Event | Ekhie</title>
     <!--bootstrap cdn links-->
     <!-- CSS only -->
     <link
@@ -23,7 +23,7 @@
       src="https://kit.fontawesome.com/5ddb92922b.js"
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="css/login.css" />
+    <link rel="stylesheet" href="css/event.css" />
     <!--trying owl carousel-->
     <link
       rel="stylesheet"
@@ -90,42 +90,73 @@
     </header>
     <!--header ends here-->
     <main>
-          <section class="login-block">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-sm-12">
-                        <form class="md-float-material form-material" action="#" method="POST">
-                            <div class="auth-box card">
-                                <div class="card-block">
-                                    <div class="row">
-                                        <div class="col-md-12">
-                                            <h2 class="text-center heading">Login</h2>
-                                        </div>
-                                    </div>
-                                    <div class="form-group form-primary"> <input type="text" class="form-control" name="email" value="" placeholder="Email" id="email"> </div>
-                                    <div class="form-group form-primary"> <input type="password" class="form-control" name="password" placeholder="Password" value="" id="password"> </div>
-                                    <div class="row">
-                                        <div class="col-md-12"> <input type="submit" class="btn btn-default btn-md btn-block waves-effect text-center  m-b-20 submit-btn" name="submit" value="Login"> 
-                                        </div>
-                                    </div>
-                                    <div class="or-container">
-                                        <div class="line-separator"></div>
-                                        <div class="or-label">or</div>
-                                        <div class="line-separator"></div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-md-12"> <a class="btn btn-lg btn-google btn-block text-uppercase btn-outline" href="#"><img src="https://img.icons8.com/color/16/000000/google-logo.png"> Login with Google account</a> </div>
-                                    </div> <br>
-                                    <p class="text-inverse text-center">Don't have an account? <a href="signup.html" data-abc="true">Signup</a></p>
-                                    <p class="text-inverse text-center"><a href="forgotPassword.html" data-abc="true">Forgot password ?</a></p>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
+     <div class="top">
+        <div class="header">
+            <h2>The Holiday Concert</h2>
+            <div class="line"></div>
+        </div>
+     </div>
+     <div class="desc">
+       <h3>Event Description</h3>
+     </div>
+
+
+     <div class="desc-info">
+         <img src="/images/holiday.jpg" alt="">
+         <div class="desc-box">
+           <div class="container">
+             <div class="row">
+               <div class="col-md-6 left-part">
+                 <h4><i class="far fa-calendar-alt"></i>Details</h4>
+                 <p class="date">Date : January 24</p>
+                 <p class="time">Time : 3:00pm</p>
+                 <p class="cost">Cost : ₦5000</p>
+               </div>
+               <div class="col-md-6 right-part">
+                 <h4><i class="fas fa-users"></i>Organisers</h4>
+                 <p class="name">Name : Omatsola</p>
+                  <p class="phone">Phone : +2348100349932</p>
+                  <p class="email">Email : omarsunday0@gmail.com</p>
+               </div>
+             </div>
+             <div class="venue">
+               <h4><i class="fas fa-map-marker-alt"></i>Venue</h4>
+               <p class="location">Victoria Island, Lagos</p>
+             </div>
+             <div class="short-desc">
+               <h4>Event Description</h4>
+               <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto doloremque ipsa, quia perferendis tempora ad corporis quas culpa cupiditate cum? Et veniam quasi qui pariatur delectus, facere rerum reiciendis dolorem?</p>
+             </div>
+           </div>
+         </div>
+         <!--payment button and price range-->
+         <div class="pay">
+          <!--regular ticket price and button-->
+           <div class="pay-reg">
+           <div class="pay-btn">
+          <button class="minus bt" onclick="handleDecrement()">-</button>
+          <div id="amount"></div>
+          <button class="add bt" onclick="handleIncrement()">+</button>
+        </div>
+        <div class="pay-type">
+          <p class="ticket-type">Standard Tickets</p>
+        </div>
+        <div class="pay-price">
+          <p>#15,000</p>
+        </div>
+      </div>
+      <div class="pay-button">
+        <button class="btn btn-default">
+          Buy Ticket
+        </button>
+      </div>
+
+       </div>
+
+     </div>
+
+
+   </main>
 
         <!--footer starts here-->
      <!-- Footer -->
@@ -221,5 +252,6 @@
           },
         })
       </script>
+      <script src="/js/index.js"></script>
   </body>
 </html>
