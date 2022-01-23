@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dashboard | Ekhie</title>
+    <title>Admin | Ekhie</title>
     <!--bootstrap cdn links-->
     <!-- CSS only -->
     <link
@@ -23,7 +23,7 @@
       src="https://kit.fontawesome.com/5ddb92922b.js"
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="css/udashboard.css" />
+    <link rel="stylesheet" href="css/admindashboard.css" />
     <!--trying owl carousel-->
     <link
       rel="stylesheet"
@@ -63,7 +63,9 @@
             </button>
             <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
               <li>
-                <button class="dropdown-item" type="button"><a href="/udsettings.html">Settings</a></button>
+                <button class="dropdown-item" type="button">
+                  <a href="/adsettings.html">Settings</a>
+                </button>
               </li>
               <li>
                 <button class="dropdown-item" type="button">Logout</button>
@@ -80,95 +82,72 @@
         <div class="sidenav">
           <ul>
             <li>
-              <a href="udproduct.html">Products</a>
+              <a href="adeventreview.html">Event Review</a>
             </li>
             <li>
-              <a href="udorders.html">Orders</a>
+              <a href="adevents.html">All Events</a>
             </li>
             <li>
-              <a href="udearnings.html">Earnings</a>
+              <a href="adorganisers.html">Organisers</a>
             </li>
             <li>
-              <a href="udsettings.html">Settings</a>
+              <a href="adcreateevent.html">Create Event</a>
             </li>
-            <button class="btn btn-default create-event2">Logout</button>
+            <li>
+              <a href="admyproducts.html">My Products</a>
+            </li>
+            <li>
+              <a href="adorders.html">All Orders</a>
+            </li>
+            <li>
+              <a href="adearnings.html">My Earnings</a>
+            </li>
+            <li>
+              <a href="adsettings.html">Settings</a>
+            </li>
+            <li>
+              <a href="#">Logout</a>
+            </li>
           </ul>
         </div>
       </div>
     </header>
     <!--header ends here-->
-    <main>
+    <main class="earning-main">
       <div class="board">
         <div class="side">
           <div class="side-content">
-            <a href="udproduct.html"><div class="product">Products</div></a>
-            <a href="udorders.html"><div class="orders">Orders</div></a>
-            <a href="udearnings.html"> <div class="Earnings">Earnings</div></a>
-            <a href="udsettings.html"
-              ><div class="settings active">Settings</div></a
+            <a href="adeventreview.html"
+              ><div class="event-review">Event Review</div></a
+            >
+            <a href="adevents.html"><div class="events">All Events</div></a>
+            <a href="adorganisers.html"
+              ><div class="Organisers">Organisers</div></a
+            >
+            <a href="adcreateevent.html"
+              ><div class="create-event">Create Event</div></a
+            >
+            <a href="admyproducts.html"
+              ><div class="my-products">My Products</div></a
+            >
+            <a href="adorders.html"><div class="all-orders">All Orders</div></a>
+            <a href="adearnings.html"
+              ><div class="my-earnings active">My Earnings</div></a
+            >
+            <a href="adsettings.html"
+              ><div class="my-settings">Settings</div></a
             >
             <a href="#"><div class="logout">Logout</div></a>
           </div>
         </div>
-        <div class="content setting-content">
-          <form>
-            <!-- 2 column grid layout with text inputs for the first and last names -->
-            <div class="row mb-4">
-              <div class="col">
-                <div class="form-outline">
-                  <label class="form-label" for="form6Example1"
-                    >First name</label
-                  >
-                  <input type="text" id="form6Example1" class="form-control" />
-                </div>
-              </div>
-              <div class="col">
-                <div class="form-outline">
-                  <label class="form-label" for="form6Example2"
-                    >Last name</label
-                  >
-                  <input type="text" id="form6Example2" class="form-control" />
-                </div>
-              </div>
-            </div> 
-
-            <!-- Text input -->
-            <div class="form-outline mb-4">
-              <label class="form-label" for="form6Example3">Display name</label>
-              <input type="text" id="form6Example3" class="form-control" />
+        <div class="content earnings-content">
+          <div class="my-earning">
+            <h4>My Earnings</h4>
+            <div class="earning-details">
+              <p>TOTAL EARNINGS</p>
+              <p>#150,000</p>
             </div>
-
-            <!-- Email input -->
-            <div class="form-outline mb-4">
-              <label class="form-label" for="form6Example4">Email Address</label>
-              <input type="Email" id="form6Example4" class="form-control" />
-            </div>
-
-            <h4 class="password-change">Password Change</h4><hr>
-
-            <!-- password input -->
-            <div class="form-outline mb-4">
-              <label class="form-label" for="form6Example5">Current Password</label>
-              <input type="password" id="form6Example5" class="form-control" />
-            </div>
-
-            <!-- Password input -->
-            <div class="form-outline mb-4">
-              <label class="form-label" for="form6Example6">New Password</label>
-              <input type="password" id="form6Example6" class="form-control" />
-            </div>
-
-            <div class="form-outline mb-4">
-                <label class="form-label" for="form6Example6">Confirm Password</label>
-                <input type="password" id="form6Example6" class="form-control" />
-              </div>
-
-
-            <!-- Submit button -->
-            <button type="submit" class="btn btn-default view-btn btn-block mb-4">
-              Save Changes
-            </button>
-          </form>
+          </div>
         </div>
       </div>
     </main>

@@ -135,14 +135,14 @@ main .board {
 }
 .side-content {
   display: block;
-  padding-top: 50px;
+  padding-top: 20px;
   width: 70%;
   margin-right: auto;
   margin-left: auto;
   margin-bottom: 100px;
 }
 .side-content a {
-  margin-bottom: 100px;
+  margin-bottom: 20px;
   padding: 10px;
   color: black;
   text-decoration: none;
@@ -175,9 +175,166 @@ main .board {
 
 /*styling for dashboard pages*/
 
-/*styling for dashboard product page*/
+/*styling for dashboard event review page*/
+.ctn{
+    background: white;
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-left: 20px;
+    border-radius: 5px;
+  }
+@media screen and (max-width: 400px) {
+    .ctn {
+      overflow-x: scroll;
+      margin: 10px;
+    }
+  }
+  @media screen and (max-width: 653px) {
+      .review-main{
+        margin-bottom: 100px;
+      }
+  }
+.view-btn{
+    background: #f58735;
+    color: white;
+}
+.view-btn2{
+    background: rgb(7, 158, 7);
+    color: white;
+}
+.view-btn3{
+  background: red;
+  color: white;
+}
+.edit{
+  color: #0b1327;
+  text-decoration: none;
+  border-right: 1px solid #00000018;
+  padding-right: 10px;
+}
+.delete{
+  color: red;
+  text-decoration: none;
+}
+
+/*add event form styling*/
+
+.add-event {
+  width: 90%;
+  margin: 40px auto;
+  border-radius: 5px;
+}
+.add-event-title {
+  padding: 20px 40px;
+}
+.add-event-title h3{
+  overflow-y: hidden;
+}
+.add-event form {
+  padding: 0 40px;
+}
+form .input {
+  width: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.342);
+  border-radius: 3px;
+  height: 40px;
+  padding: 5px;
+  outline: none;
+  margin-bottom: 30px;
+}
+form textarea {
+  width: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.342);
+  border-radius: 3px;
+  padding: 5px;
+  outline: none;
+  margin-bottom: 30px;
+}
+form label {
+  margin-bottom: 10px;
+}
+form label span {
+  font-size: 12px;
+  color: grey;
+  font-style: italic;
+}
+.date input {
+  margin-right: 5px;
+}
+.import-file {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+@media screen and (max-width: 635px) {
+  .event-main{
+    margin-bottom: 100px;
+  }
+}
+/*ticket section styling*/
+.ticket {
+  background: white;
+  border-radius: 5px;
+  margin-bottom: 40px;
+}
+.add-ticket {
+  margin-bottom: 20px;
+}
+.add-ticket button {
+  background: #f58735;
+  color: white;
+}
+.ticket-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  flex-wrap: wrap;
+}
+.ticket-top .intro{
+  overflow-y: hidden;
+}
+.add-btn {
+  background: #f58735;
+  color: white;
+  margin-right: 5px;
+}
+.submit{
+    background: #f58735;
+    color: white;
+    height: 50px;
+}
+/*media query for forms*/
+
+@media screen and (max-width: 500px) {
+  .add-event {
+    width: 100%;
+  }
+  .add-event form {
+    padding: 0 15px;
+  }
+  .add-event-title {
+    padding: 20px 15px;
+  }
+  .date input {
+    margin-bottom: 10px;
+  }
+  .ticket .intro {
+    text-align: center;
+  }
+  .tickets{
+      margin-bottom: 40px;
+      border-bottom: 1px solid rgba(128, 128, 128, 0.288);
+  }
+}
+
+/*my products styling*/
 .product-content h4 {
   padding: 20px;
+}
+@media screen and (max-width: 635px) {
+  .product-main{
+    margin-bottom: 100px;
+  }
 }
 
 /*styling for dashboard orders page*/
@@ -205,6 +362,29 @@ main .board {
     overflow-x: scroll;
   }
 }
+@media screen and (max-width: 635px) {
+  .order-main{
+    margin-bottom: 100px;
+  }
+}
+/*styling for dashboard earnings page*/
+.my-earning{
+  width: 80%;
+  margin: 20px auto;
+}
+.earning-details{
+  background: white;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+@media screen and (max-width: 635px) {
+  .earning-main{
+    margin-bottom: 300px;
+  }
+}
 /*styling for dashboard settings page*/
 .setting-content form {
   padding: 30px;
@@ -212,21 +392,10 @@ main .board {
 .password-change{
     margin-top: 50px;
 }
-/*styling for dashboard earnings page*/
-.my-earning{
-    width: 80%;
-    margin: 20px auto;
-}
-.earning-details{
-    background: white;
-    padding: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-top: 40px;
-}
-@media screen and (max-width: 653px) {
-    main{
-        height: 300px;
-    }
+
+/*styling for dashboard organisers page*/
+@media screen and (max-width: 635px) {
+  .organisers-main{
+    margin-bottom: 100px;
+  }
 }
