@@ -1,6 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Corinthia:wght@700&family=PT+Sans&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Corinthia:wght@700&family=PT+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Staatliches&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -8,7 +8,7 @@
 }
 body {
   background: #f9f9f9;
-  font-family: 'PT Sans', sans-serif;
+  font-family: "PT Sans", sans-serif;
   overflow-x: hidden;
 }
 nav {
@@ -106,4 +106,83 @@ nav {
 footer {
   background: #0b1327;
   margin-top: 0px;
+}
+/*cart styling*/
+main {
+  min-height: 500px;
+}
+.cart-ctn {
+  margin-top: 30px;
+}
+.cart-items {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.cart-item img {
+  width: 70px;
+  height: 60px;
+}
+.cart-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.cart-item > *:nth-child(2) {
+  padding-left: 10px;
+}
+.cart-item > *:nth-child(3) {
+  padding-left: 15px;
+}
+.pay-btn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.pay-btn .bt {
+  border: none;
+  border-radius: 70px;
+  padding: 10px;
+  font-size: 20px;
+  height: 50px;
+  width: 50px;
+  text-align: center;
+}
+.cancel {
+  color: red;
+  text-decoration: none;
+  font-size: 20px;
+}
+.total {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: flex-end;
+}
+.tot {
+  background: white;
+  padding: 20px;
+  width: 600px;
+}
+.tot .calc {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.checkout {
+  background: #f58735;
+  color: white;
+}
+@media screen and (max-width: 500px) {
+  .cart-items {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 20px;
+  }
+  .price{
+      padding-left: 10px;
+      padding-top: 20px;
+  }
 }

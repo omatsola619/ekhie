@@ -106,6 +106,12 @@ nav {
 .sidenav ul li {
   list-style: none;
   margin-bottom: 20px;
+  padding: 5px;
+}
+.sidenav ul li.active{
+  background: #f58735;
+  color: black;
+  padding: 5px;
 }
 .sidenav ul li a {
   color: #283350;
@@ -205,6 +211,11 @@ main .board {
     overflow-x: scroll;
   }
 }
+@media screen and (max-width: 653px) {
+  .ft-space{
+    margin-top: 100px;
+  }
+}
 /*styling for dashboard settings page*/
 .setting-content form {
   padding: 30px;
@@ -225,8 +236,8 @@ main .board {
     justify-content: space-between;
     margin-top: 40px;
 }
-@media screen and (max-width: 653px) {
+/* @media screen and (max-width: 653px) {
     main{
         height: 300px;
     }
-}
+} */

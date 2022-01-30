@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dashboard | Ekhie</title>
+    <title>Cart | Ekhie</title>
     <!--bootstrap cdn links-->
     <!-- CSS only -->
     <link
@@ -23,7 +23,7 @@
       src="https://kit.fontawesome.com/5ddb92922b.js"
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="css/udashboard.css" />
+    <link rel="stylesheet" href="css/cart.css" />
     <!--trying owl carousel-->
     <link
       rel="stylesheet"
@@ -44,32 +44,28 @@
     <!--navbar and side menu-->
     <header>
       <nav>
-        <div class="menu-icon">
-          <i class="fas fa-bars" onclick="showSidebar()"></i>
-        </div>
         <a href="index.html" class="title">
           <img src="images/logo.png" alt="" />
         </a>
         <div class="theNav">
-          <div class="dropdown">
-            <button
-              class="btn btn-default dropdown-toggle other-btn"
-              type="button"
-              id="dropdownMenu2"
-              data-bs-toggle="dropdown"
-              aria-expanded="false"
-            >
-              <i class="fas fa-user"></i>
-            </button>
-            <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
-              <li>
-                <button class="dropdown-item" type="button"><a href="/udsettings.html">Settings</a></button>
-              </li>
-              <li>
-                <button class="dropdown-item" type="button">Logout</button>
-              </li>
-            </ul>
-          </div>
+          <ul>
+            <li>
+              <a href="about.html">About</a>
+            </li>
+            <li>
+              <a href="shop.html">Shop</a>
+            </li>
+            <li>
+              <a href="signup.html">Signup</a>
+            </li>
+            <li>
+              <a href="login.html">Login</a>
+            </li>
+            <button class="btn btn-default create-event">Create Event</button>
+          </ul>
+        </div>
+        <div class="menu-icon">
+          <i class="fas fa-bars" onclick="showSidebar()"></i>
         </div>
       </nav>
       <!-- The side bar starts here -->
@@ -79,76 +75,77 @@
         </div>
         <div class="sidenav">
           <ul>
-            <li class="active">
-              <a href="udproduct.html">Products</a>
+            <li>
+              <a href="about.html">About</a>
             </li>
             <li>
-              <a href="udorders.html">Orders</a>
+              <a href="shop.html">Shop</a>
             </li>
             <li>
-              <a href="udearnings.html">Earnings</a>
+              <a href="signup.html">Signup</a>
             </li>
             <li>
-              <a href="udsettings.html">Settings</a>
+              <a href="login.html">Login</a>
             </li>
-            <button class="btn btn-default create-event2">Logout</button>
+            <button class="btn btn-default create-event2">Create Event</button>
           </ul>
         </div>
       </div>
     </header>
     <!--header ends here-->
     <main>
-      <div class="board">
-        <div class="side">
-          <div class="side-content">
-            <a href="udproduct.html"><div class="product active">Products</div></a>
-            <a href="udorders.html"><div class="orders">Orders</div></a>
-            <a href="udearnings.html"> <div class="Earnings">Earnings</div></a>
-            <a href="udsettings.html"><div class="settings">Settings</div></a>
-            <a href="#"><div class="logout">Logout</div></a>
+      <div class="container cart-ctn">
+        <h3>Shopping Cart</h3>
+        <hr />
+        <div class="cart-items">
+          <div class="cart-item">
+            <a href="#" class="cancel">x</a>
+            <img src="/images/post3.jpg" alt="" />
+            <p>Holiday gift package 2</p>
+          </div>
+          <div class="price"><p>₦100,000</p></div>
+          <div class="quantity">
+            <div class="pay-btn">
+              <button class="minus bt" onclick="handleDecrement()">-</button>
+              <div id="amount"></div>
+              <button class="add bt" onclick="handleIncrement()">+</button>
+            </div>
           </div>
         </div>
-        <div class="content product-content">
-          <h4>Products overview</h4>
-          <table class="table">
-            <thead>
-              <tr>
-                <th scope="col">#</th>
-                <th scope="col">Product</th>
-                <th scope="col">Amount</th>
-                <th scope="col">id</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <th scope="row">1</th>
-                <td>regular ticket</td>
-                <td>15,000</td>
-                <td>#7574</td>
-              </tr>
-              <tr>
-                <th scope="row">2</th>
-                <td>vip holiday ticket</td>
-                <td>25,000</td>
-                <td>#4794</td>
-              </tr>
-              <tr>
-                <th scope="row">3</th>
-                <td>vvip ticket</td>
-                <td>1,000,000</td>
-                <td>#4758</td>
-              </tr>
-            </tbody>
-          </table>
+        <hr />
+
+        <div class="cart-items">
+          <div class="cart-item">
+            <a href="#" class="cancel">x</a>
+            <img src="/images/post6.jpg" alt="" />
+            <p>Shoes & gift boxes</p>
+          </div>
+          <div class="price"><p>₦5,000</p></div>
+          <div class="quantity">
+            <div class="pay-btn">
+              <button class="minus bt" onclick="handleDecrement()">-</button>
+              <div id="amount"></div>
+              <button class="add bt" onclick="handleIncrement()">+</button>
+            </div>
+          </div>
         </div>
 
-        
+        <div class="total">
+          <div class="tot">
+            <h4>Cart Totals</h4>
+            <div class="calc">
+              <p>Subtotal</p>
+              <p>₦13,000</p>
+            </div>
+            <button class="btn btn-default checkout">Checkout</button>
+          </div>
+        </div>
       </div>
     </main>
 
     <!--footer starts here-->
     <!-- Footer -->
-    <footer class="text-center bg-dark text-white ft-space">
+    <footer class="text-center bg-dark text-white">
       <!-- Grid container -->
       <div class="container p-4">
         <!-- Section: Social media -->
@@ -257,5 +254,6 @@
         },
       });
     </script>
+    <script src="/js/index.js"></script>
   </body>
 </html>
